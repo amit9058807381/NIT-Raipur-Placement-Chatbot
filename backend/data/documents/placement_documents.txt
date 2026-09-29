@@ -1,0 +1,1921 @@
+
+================================================================================
+DOCUMENT 1
+================================================================================
+
+Company: Pine Labs
+
+Source: Interview Experience
+
+CTC: 11 LPA
+
+Test Pattern:
+22 MCQ, 1 Coding question 
+
+Test Duration:
+60 minutes
+
+Question Topics:
+1 Coding question from string and two pointer 
+4 questions from data structure 
+4 questions from git and GitHub
+4-5 questions from generic cloud
+4 questions from design pattern
+4 questions from kubernetes
+2-3 questions from REST API
+
+Interview Duration:
+37 minutes
+
+Topics Asked:
+Oops, DSA, OS, DBMS 
+
+Coding Questions Asked:
+Frog Jump 
+A frog can jump one or two step at a time. So how many way it can jump nth stairs?
+How did you come to this solution?
+What is the space complexity of this approach?
+Can you optimise the space and how?
+
+Core Subject Questions:
+OS : 
+Types of Process scheduling, describe each
+ What is starvation?
+DBMS:
+ Fetch second max salary from employees table
+Types of key in DBMS with example, Difference b/w primary key and composite key 
+Can composite key be a primary key?
+DSA:
+ Algorithm for Selection sort
+Time complexity analysis for Quick Sort
+Any sorting algorithm that works in O(n) and how to implement that algorithm and in which situation we can use this algorithm?
+OOPS:
+ what is inheritance? Why it is used? Can we always access parent class method using inheritance?
+What is encapsulation? How to achieve encapsulation?
+What is abstraction? How to achieve abstraction?
+
+
+
+
+Project Discussion:
+What are the projects in your resume. Describe all the projects.
+What technologies are used in these projects?
+What kinds of API you used in your project?
+Write down the API url that you have used in your project 
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 2
+================================================================================
+
+Company: Pine Labs
+
+Source: Interview Experience
+
+CTC: 11
+
+Test Pattern:
+22 MCQ,1 Coding Question
+
+Test Duration:
+60 minutes
+
+Question Topics:
+5 question from Docker,5 question from Kubernetes,5 question from DSA and OOPS,5 question from Github and design patterns,2 question from security alerts and 1 Coding question from strings.
+
+Interview Duration:
+45 minutes
+
+Topics Asked:
+Array,OOPS,Spring Annotations,SQL,REST API,OS
+
+Coding Questions Asked:
+Find whether given Array is in form of a mountain or not (with Time and space Complexity)
+
+Core Subject Questions:
+Q1:What do you mean by Inheritance
+Q2:What is diamond problem in java
+Q3:What is the annotation used for generating primary key in Spring JPA
+Q4:What is the difference between Interface and Abstract Class
+Q5:Explain the ways through which Abstraction can be achieved in Java
+Q6:What is Polymorphism 
+Q8:What is View in SQL
+Q9:What are SQL commands
+Q10:What is Scheduling Algorithm in OS
+
+Project Discussion:
+Q1.Write the code for generating GET Mapping Request in your Project
+Q2 What do you mean by GET and POST Mapping
+Q3.Explain Microservices Architechture
+
+Miscellaneous:
+Behavioral and situation based questions :
+1)Where do you see yourself in next 5years?
+
+2)Why do you want to join our company ?
+
+3)What are your hobbies?
+
+4)You are comfortable with us or not?
+
+5)How imp feedback is in your life?
+
+6)Team related questions according to (situation) as per HR
+
+
+================================================================================
+DOCUMENT 3
+================================================================================
+
+Company: Pine Labs
+
+Source: Interview Experience
+
+CTC: 11
+
+Test Pattern:
+22 MCQ, 1 Coding Question
+
+Test Duration:
+60 minutes
+
+Question Topics:
+3 questions from Git, 3 questions from Generic Cloud, 4 questions from Docker, 2 questions from Kubernetes, 3 questions from Design Pattern, 3 questions from Basic Programming, 2 questions from REST API, 2 questions from Security Analyst, 1 Coding Question from String.
+
+Interview Duration:
+40 minutes
+
+Topics Asked:
+DBMS, Hashing in C++
+
+Coding Questions Asked:
+Given an integer array arr[n], create an array prod[n] such prod[i] is the product of all elements of arr except arr[i]
+
+Core Subject Questions:
+Define Normalization and normal forms
+
+Project Discussion:
+1) Discussion about Project
+2) What is logistic regression
+3) What is linear regression
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 4
+================================================================================
+
+Company: Deloitte USI
+
+Source: Interview Experience
+
+CTC: 7.6 LPA
+
+Test Pattern:
+Total Questions: 67(65 MCQ + 2 Coding Questions)
+Sections: 4
+
+Test Duration:
+90 minutes  minutes
+
+Question Topics:
+Topics Covered:
+Analytical Ability
+Quantitative Ability
+Verbal Ability
+Computer Science Fundamentals: OS, DBMS, Cloud Computing, SQL, Pseudocodes
+Coding Questions: 2 coding questions, both on Arrays 
+
+Interview Duration:
+65 minutes  minutes
+
+Topics Asked:
+Software Engineering, Cloud computing, Sql queries, DBMS
+
+Coding Questions Asked:
+No coding question was asked to me
+
+Core Subject Questions:
+1. What is SDLC?
+
+2. Explain different SDLC models.
+
+3. What is STLC?
+
+4. Explain and differentiate each type of testing.
+
+5. What is Debugging?
+
+6. What is a physical DFD?
+
+
+---
+
+7. What do you mean by cloud?
+
+8. Difference between on-premises storage and cloud storage.
+
+9. What are the different data centers deployed for Cloud Computing? Explain them.
+
+10. What is Rate Limiting?
+
+
+---
+
+11. Write SQL queries on joining and subqueries on a table that was given to me.
+
+12. What is a unique key?
+
+13. Difference between unique key and primary key.
+
+14. What is a super key?
+
+15. What is normalization and its importance?
+
+16. What is DDL?
+
+17.  Some commands of TCL.
+
+
+
+Project Discussion:
+Full stack e-commerce platform 
+
+1. What are the components of your project?
+
+2. What is the flow of the project?
+
+3. What is the technical architecture of your project?
+
+4. Why did you choose this project, and how does it make a difference?
+
+5. How did you implement security features in your e-commerce platform?
+
+6. How did you handle database design and ensure data consistency?
+
+7. What challenges did you face during the development of this project, and how did you overcome them?
+
+8. How does your platform handle payment processing and ensure transaction security?
+
+
+
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 5
+================================================================================
+
+Company: Deloitte
+
+Source: Interview Experience
+
+CTC: 7.6 LPA
+
+Test Pattern:
+65 MCQ ( 3 section ) , 2 Coding
+
+Test Duration:
+120 minutes
+
+Question Topics:
+Aptitude,Verbal and non verbal reasoning,Core like networking,OOPS,DBMS etc. 
+
+Interview Duration:
+50 minutes
+
+Topics Asked:
+DBMS, OOPS, OS, Spring Boot, Spring JPA and ORM etc..
+
+Coding Questions Asked:
+Sam's Array : 
+Thier is an Array in which two lucky number are present such that thier absolute difference of the reverse of that numbers is maximum in that array,
+We have to return that maximum difference and both the lucky number.
+
+Core Subject Questions:
+DBMS : Transaction, ACID, etc..
+Spring Boot : Annotations, JPA and ORM, much more...
+Cloud Computing
+Docker and kubernetes ( basics )
+AI and Machine Learning concepts like Model etc..
+
+Project Discussion:
+Point 1 : Architecture of Project
+Point 2 : workflow of data
+Point 3 : Problem faced and solutions
+Point 4 : Databases
+Point 5 : Layers used in Projects
+Much more concepts in deep.
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 6
+================================================================================
+
+Company: Nucleusteq
+
+Source: Interview Experience
+
+CTC: 9 lpa
+
+Test Pattern:
+10 MCQ, 2 Coding Questions, 1 SQL Query
+
+Test Duration:
+90 minutes
+
+Question Topics:
+MCQ Question from Core Topics, SQL, Java, Python, DSA
+2 Coding questions: Both arrays
+1 SQL Query question
+
+Interview Duration:
+90 minutes
+
+Topics Asked:
+MERN Stack, DSA, Projects, Miscellaneous
+
+Coding Questions Asked:
+Q1. 2 sum problem
+Q2. Find duplicates in an array.
+Q3. SQL Query to find the second highest age in a database.
+
+Core Subject Questions:
+Q1. DIfferent types of Joins
+Q2. Relational vs Non relational database
+Q3. NoSQL Databases
+Q4. SQL Queries
+Q5. What is Port?
+Q6. Implement Inheritance using Java
+
+Project Discussion:
+Q1. Challenges faced during projects
+Q2. Tech stack used
+Q3. Approach while making projects
+Q4. Duration of Projects
+
+Miscellaneous:
+Q1. In how many ways a torned shoe can be used?
+Q2. React Architecture.
+Q3. How to conect a database with node.js?
+Q4. What is Node.js?
+Q5. How to implement text to speech using Node.js?
+Q6. Promises vs Callbacks
+Q7. Implement Promises using Javascript
+Q8. How to make website responsive?
+
+
+================================================================================
+DOCUMENT 7
+================================================================================
+
+Company: Pharmeasy
+
+Source: Interview Experience
+
+CTC: 22
+
+Test Pattern:
+22 MCQ 1 coding question 1 SQL query
+
+Test Duration:
+120 minutes
+
+Question Topics:
+Questions were on DBMS , Java and python.
+Coding question was a greedy one
+
+
+Interview Duration:
+60 minutes
+
+Topics Asked:
+Major questions were related to spring boot, Java . The interviewer was interested in java so he didn't asked me anything else . 
+
+Coding Questions Asked:
+Lru cache 
+Lfu cache 
+One graph question based on flood fill algorithm 
+Serialize and deserialize a binary tree
+
+Core Subject Questions:
+No questions were asked on core subjects 
+
+Project Discussion:
+First they asked is my project live or not 
+Then they asked me to choose one of the project and explain it to them 
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 8
+================================================================================
+
+Company: Deloitte USI
+
+Source: Interview Experience
+
+CTC: 7.6
+
+Test Pattern:
+65 MCQ , 2 Coding Question
+
+Test Duration:
+90 minutes
+
+Question Topics:
+2 basic coding ques on printing and vowels 
+65 mcqs based on English , reasoning , computer fundamentals 
+
+Interview Duration:
+30 minutes
+
+Topics Asked:
+Projects explaining, recall , namespace in python , SQL order by , merge sort implementation (no code ) 
+
+Coding Questions Asked:
+Merge sort , No coding just the process 
+
+Core Subject Questions:
+Not Available
+
+Project Discussion:
+1. Explain the working of project , it was individual or group project , tech stack used 
+
+2. Performance metrics used  for deep learning model . 
+
+3. How a particular functionality is implemented . 
+
+4. How will a end use a specific functionality . 
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 9
+================================================================================
+
+Company: Deloitte
+
+Source: Interview Experience
+
+CTC: 7.6 LPA
+
+Test Pattern:
+65 MCQ, 2 coding Question
+
+Test Duration:
+90 minutes
+
+Question Topics:
+Verbal ability-13 , Reasoning-12, Quantitative ability-10, Technical -30, coding -2
+
+Interview Duration:
+50 minutes
+
+Topics Asked:
+Software Engineering, Cloud, DBMS
+
+Coding Questions Asked:
+SQL Query 
+1- Nested SubQuery
+2- Self join
+
+Core Subject Questions:
+1-Software Development Life Cycle and its phases
+2- Software Testing Life Cycle and its phases
+3- SDLC models
+4- Types of testing
+5- Cloud and services Provided by cloud
+6- Scalability issues in before and after cloud
+7- Difference between primary key and unique key
+8- Difference between union and union or
+9- Types of joins
+
+
+Project Discussion:
+1. Which software model have you followed for your project?
+2. workflow of the project.
+3. Key Challenges
+4. Which part need to be modified
+
+
+Miscellaneous:
+Why you think you are good fit for this role?
+
+
+================================================================================
+DOCUMENT 10
+================================================================================
+
+Company: Deloitte
+
+Source: Interview Experience
+
+CTC: 7.6 lpa
+
+Test Pattern:
+Multiple mcqs ,which varies from section to section ( For eg:- 15 MCQ from aptitude ,30 MCQ from computer fundamentals and so on) along with 2 coding ques 
+
+Test Duration:
+90 minutes  minutes
+
+Question Topics:
+2 basic coding question ( mainly from string,array easy level) , In computer fundamentals questions were from topics computer network, DBMS, operating system , software engineering and other basic questions, in aptitude and reasoning section, questions were from seating arrangement, blood relation, data interpretation, profit and loss, simple interest and compound interest, work and time,boat and stream ,age and other related topics under these sections.
+
+Interview Duration:
+35-40 minutes minutes
+
+Topics Asked:
+Open source contribution asked in depth, Project in depth ,mern stack technologies in depth, DBMS normalisation,DBMS joins, computer network,cloud computing, ERP and other computer related questions 
+
+Coding Questions Asked:
+Not Available
+
+Core Subject Questions:
+Q1) what are the advantages of normalisation in DBMS?
+Q2) how many type of joins are there?
+Q3) explain left join
+Q4) difference between osi and TCP 
+Q5) what is cloud 
+Q6) except Amazon AWS and gcp which other companies provide the cloud services?
+Q7) what is ERP?
+
+Project Discussion:
+1) which technologies have been used in the project?
+2) How did you connected the backend and the frontend ?
+3) A use case is given ,for eg an option button of a country is given,and while clicking on it ,all the related cities of that country is displayed,how will you make that ?
+4) how will you create a drop down within a drop down?
+5) on entering the user details d logging into the website , how and why can you see the user interface?
+6) How your projects stand out with respect to buisness logistics,( had to explain in quite depth)
+7) explain the specific contributions that you have done in the open source and your approach for that 
+
+Miscellaneous:
+Few tips:
+1) Answer confidently and when I mention it ,I really mean it , because the interviewer should not have a perception that you are getting nervous.
+2) Also explain everything in depth considering the interviewer does not know anything and you have to explain him everything from the scratch.
+3)Even if you do not know the answer of any question ,try responding it with the least information and knowledge that you have rather than directly saying NO
+4) look straight into the eyes of the interviewer ie maintain proper eye contact while talking and explaining
+5) A tip that make sure you speak the most of the time during interview,ie if it is of 30 minutes make sure you  speak for the 22-23 minutes and give less chance to the interviewer to speak, because if he speaks there are chances that he may ask something out of the blue ,so better guide and lead your own interview.
+6) Ask for little permissions that sir shall I also cover this portion of the topic or question asked ,it basically shows little gestures of respect .
+7) Last but not the least  believe in thy ,in yourself and the hardwork you did and hold your horses throughout the interview as because success is always the deadly combination of hardwork + luck.
+
+
+================================================================================
+DOCUMENT 11
+================================================================================
+
+Company: Nucleusteq
+
+Source: Interview Experience
+
+CTC: 6.5 LPA
+
+Test Pattern:
+2 Coding Question, 1 SQL Query, 10 MCQs
+
+Test Duration:
+90 minutes
+
+Question Topics:
+MCQs from Core Subject like DBMS, Networking, Predict No. of errors in Code, SQL Query.
+SQL Query was related to Joins. Schema was given and we needed to write query for desired output. 
+Both Coding questions were from Array
+
+Interview Duration:
+There were 3 Rounds - 2 technical and  1 HR. 1st was for 60 mins, 2nd one was for 90 mins. 3rd one was for 20 mins. minutes
+
+Topics Asked:
+Core Java, Spring Boot, SQL, Coding question from Array and Strings.
+
+Coding Questions Asked:
+Technical Round 1-
+1) https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/
+2) https://leetcode.com/problems/largest-number/description/
+3) SQL- Nth Highest salary
+
+Technical Round 2-
+1) https://leetcode.com/problems/valid-anagram/description/
+2) Input: Good Morning
+Output: G12d M3rn1ng
+3) SQL- I was asked to open SQL Editor online(Programiz) and it already contains tables so I was told to find the details of the  Customers (Customers table) who bought Keyboard and Mouse (Order table). 
+Then I was told to write about the another query where I need to find no. of employess who work in same department. 
+If the DBA forget to make primary key while making the table how will you update it afterwards. 
+
+I had to run the code and sql queries as well
+
+Core Subject Questions:
+1st round was based on Java, OOPS, DSA, SQL. Lasted for 1hr.
+Ques related to OOPS was asked. 
+1) What are the OOPS concepts?
+2) Which is not possible in Java - Multiple or Multilevel Inheritence
+3) How to do multiple Inheritence in Java ?
+4) Whst is interface?
+5) Final, finally, finalize
+6) Garbage collector
+7) Abstract and default methods.
+8) Comparator and Comparable
+
+SQL- Diff between NoSQL and MySQL 
+DSA, SQL 
+
+
+Project Discussion:
+2nd Round was based on project discussion, Spring Boot, DSA , SQL. Lasted for 1.5hr
+1) Explain one of the project.
+2) Experience with AWS ( asked because I had deployed it on AWS)
+3) Why do we use Spring Boot?
+4) Dependency Injection
+5) JDBC connection in your project
+6) Method A gets output from  Method B and Method B gets output from Method C how does this work and which data structure is followed? 
+7) Diff b/w JPA nad Hibernate?
+8) Do you need to write any code for in Project classpath for connection to database?
+9) What is ORM?
+10) How to search for a student with id 101 in your spring boot application?
+11) What is JSON?
+12) How findById does teh above work internally?
+13) If we pass a string in JSON in postman instead of key value pair . what will happen?
+14) What are headers, path parameter. query parameter?
+15) DSA, SQL 
+
+Miscellaneous:
+3rd was the HR round. Lasted for 20min.
+Asked behavioral question and Technical question related to Project as well.
+1) Challenges faced in project and how did I overcame it.
+2) Biggest achivement in life.
+3) Motivation in life and how have you been working on it?
+4) Apart from academics what have you learnt by your own?
+5) Rank in class.
+6) What are your career aspects?
+7) What is your Core interest area?
+
+I would like to say that be confident with your answers. If you don't know any answer then politely say that you don't know rather than dragging it more. And if you know anything related to it then do say it that you know something close to it. 
+In DSA ques, tell all the approaches you know and while coding interact with the interviewer that what are you doing. They are very cooperative and they will help you also so there is nothing to worry about. You just need to keep calm and be confident all throughout. 
+Also you need to have good communication skills as it will help you to boost your confidence. 
+Hands on Experience in Project especilally Spring Boot gives you an edge to explain all the issues faced while making it. 
+Good Luck  and give your best!
+
+
+================================================================================
+DOCUMENT 12
+================================================================================
+
+Company: Quantiphi Analytics (Role-Business Analyst)
+
+Source: Interview Experience
+
+CTC: 8.5
+
+Test Pattern:
+Online Test (Aptitude, Verbal & Coding)
+Total Questions was to be answered: 76 Questions 
+There was no negative marking
+
+73 MCQs
+3 Coding Questions
+
+Test Duration:
+01:30:00 minutes
+
+Question Topics:
+73 MCQs(Aptitude+Verbal)
+3 Coding Questions(Level-Tough)(All of which were based on DBMS tables, yet you have to solve using any programming language only, be it C++,JAVA,JS, etc)
+
+Interview Duration:
+1 Group Discussion Round-20:00 minutes,Interview BA1-40:00 minutes, Interview BA2-50:00mins,HR Round-Overall 15 minutes(I personally took 10) minutes
+
+Topics Asked:
+Group Discussion- 2 Topics were given to discuss
+No 1- To What Extent Should Media Freedom Be Granted? A Reflection on the Recent Moumita Das Incident
+
+No 2-Work-Life Balance is a myth or not
+
+Interview BA1- 2 Situational Based Questions on case study(Level-Medium), 1 basic SQL query was being asked to explain and to make some alternative changes.
+
+Situational-Based Question 1: The first situational question revolved around a Machine Learning scenario.
+
+Situational-Based Question 2: The second situational question presented a different real-world case study, focusing on problem-solving and decision-making skills.
+
+Note->
+(The interviewer was more interested in understanding the approach and thought process rather than arriving at a specific solution. This involved analyzing the problem, considering various models, and discussing potential challenges and ways to address them.)
+
+Interview BA2-
+
+Explain any company's working model (mine was Zomato):
+Discussed Zomato's business model, highlighted how they manage their operations, logistics, and customer satisfaction.
+
+Explain some business models that have influenced you (I explained Jio, boAt, Cred):
+I shared insights on Jio’s disruptive pricing strategy that transformed the telecom industry, boAt’s focus on affordability and stylish design that made it a market leader in audio accessories in India, and Cred’s innovative approach to rewarding credit card payments.
+
+Tell about some competitors of boAt and in which tier cities it is influential:
+I discussed competitors like JBL, Sony, and Noise, and mentioned how boAt has made significant inroads in Tier 2 and Tier 3 cities by offering budget-friendly yet stylish audio products that resonate with younger consumers.
+
+Why do you think you are a good fit for our company?
+
+Have you joined any clubs in college?
+Shared my partial involvement in various college clubs like participating in various events and activites.
+
+Why are you preferring a Business Analyst role over a Developer role?
+I explained my passion for analyzing market trends, deriving insights from data, and making strategic recommendations. While I have technical skills, I find greater fulfillment in roles that require a blend of business understanding and analytical thinking.
+
+HR Round:
+
+1.Basic Introduction
+
+2.Family Background:
+Shared a brief overview of my family, their professions, and values that have shaped my career aspirations and work ethic.
+
+3.Thoughts about LGBTQ+ Community:
+Expressed my support for equality, inclusion, and the importance of creating a respectful and supportive environment for all, regardless of gender or sexual orientation.
+
+4.What will you do if a colleague from this community is being bullied, and your other peers are involved?
+
+5.How will you handle a situation where you have multiple projects and departments to manage simultaneously?
+
+6.Will you be able to work overtime, and how will you handle it?
+
+7.Achievements and Hobbies:
+Highlighted some key achievements, including academic accomplishments, awards, and significant contributions to previous roles or projects. For hobbies, I mentioned activities that reflect my interests, such as reading, writing, sketching, or participating in problem-solving challenges.
+
+Coding Questions Asked:
+Not Available
+
+Core Subject Questions:
+DBMS(Asked to explain Group By Clause)
+
+Project Discussion:
+1-Explain the projects
+2-Real life Industrial Use-Cases of the projects
+
+Miscellaneous:
+NA(All Covered Above)
+
+
+================================================================================
+DOCUMENT 13
+================================================================================
+
+Company: Pharmeasy
+
+Source: Interview Experience
+
+CTC: Not Clear (Cash Component 14B+ 1JB)
+
+Test Pattern:
+22 MCQ, 1 Coding Qstn , 1 SQL Query
+
+Test Duration:
+120 Mins minutes
+
+Question Topics:
+MERN, Core Subjects , 1 SQL BASED ON joins , 1 DSA based on DP
+
+Interview Duration:
+75-90 mins each (1 dsa focused & 1 project focused) minutes
+
+Topics Asked:
+DSA Centric(linked list , graph , dp , implementation) , couple of questions from javascript & Indexing (Detailed 5 mins each)
+
+Coding Questions Asked:
+1. Detect loop in Linked List
+2. Detect start of loop in linked List
+3. Spiral Matrix with a modification
+4. MCM basic variation 
+5. DFS BFS 
+6.LFU Cache
+7. MLFQ IMPLEMENTATION
+
+
+Core Subject Questions:
+1. Indexing in DBMS (with internal working explained DB pages & blocks so he didnt asked anymore)
+
+
+Project Discussion:
+1. Detailed Explanation on ML Project
+2. Rest API basics
+3. How JS handles Async operations
+4. Unique feature implemented in project 
+
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 14
+================================================================================
+
+Company: Mphasis
+
+Source: Interview Experience
+
+CTC: 600000
+
+Test Pattern:
+70 mcq, 1 coding 
+
+Test Duration:
+120 minutes
+
+Question Topics:
+English, aptitude,  core subjects
+
+Interview Duration:
+20 minutes
+
+Topics Asked:
+Resume related, 3 coding ques, sorting
+
+Coding Questions Asked:
+Palindrome string
+
+Core Subject Questions:
+Opps
+
+Project Discussion:
+Technology used, and meaning of this line, etc
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 15
+================================================================================
+
+Company: Optum
+
+Source: Interview Experience
+
+CTC: 18.5
+
+Test Pattern:
+50 MCQ, 1 coding question.
+
+Test Duration:
+90 minutes  minutes
+
+Question Topics:
+27 from technology concepts, 17 from cognitive ability, 6 from cognitive analytics, 1 coding question from DP.
+
+Interview Duration:
+60 minutes  minutes
+
+Topics Asked:
+Doubly linked list, race condition, all joins, indexing, OSI model, dangling pointer, top down & bottom up approach & frontend & backend from projects.
+
+Coding Questions Asked:
+Travis sells apples with only two specific weights, A (min weight) and B (max weight). Given a target weight W (in grams), find the sum of:
+
+1. The maximum number of apples (using mostly A-weight apples).
+2. The minimum number of apples (using mostly B-weight apples).
+If it's impossible to reach exactly W grams using these weights, return -1.
+
+Core Subject Questions:
+From DBMS- Normalisation, indexing & joins, from OS- Race condition & prevention techniques from CPP- dangling pointer, top down & bottom up approach.
+
+Project Discussion:
+1. What is MERN stack?
+2. Why you use MongoDb database in your project?
+3. Motivation behind project? 
+4. What difficulties you faced during working on project? 
+5. Do you ever work in team if yes, then what explain about it?
+6. Some technical questions from frontend & backend like API integration, working of project, flow of project? 
+7. How you make your project scalable? 
+8. If I give you a new project how you handle it & how you implement it?
+
+Miscellaneous:
+Overall it was Nice experience & interviewer was so polite & friendly.
+
+
+================================================================================
+DOCUMENT 16
+================================================================================
+
+Company: Optum
+
+Source: Interview Experience
+
+CTC: 18.5 LPA
+
+Test Pattern:
+50 MCQ, 1 coding question 
+
+Test Duration:
+90 minutes  minutes
+
+Question Topics:
+MCQ from logical reasoning, quants, computer fundamentals and coding question from DP
+
+Interview Duration:
+50 minutes
+
+Topics Asked:
+Linked list, OOPs, sliding window, Array
+
+Coding Questions Asked:
+Q1) demonstrate all OOPs concept using a code
+Q2) given the head of a linked list, find if it is a circular linked list or not
+Q3) given an array, for every adjacent elements pair, check if the sum of adjacent elements is prime or not
+
+Core Subject Questions:
+What is critical section problem
+Methods for deadlock prevention 
+
+Project Discussion:
+1) give description of the projects
+2) what technologies are used
+3) what difficulties were faced while making the project
+4) what are hooks in react
+5) what is computer vision
+6) describe how you collaborated on a team project
+7) what is openCV and MediaPipe
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 17
+================================================================================
+
+Company: Kanerika
+
+Source: Interview Experience
+
+CTC: 10 LPA
+
+Test Pattern:
+70 MCQ
+
+Test Duration:
+60 minutes
+
+Question Topics:
+Questions from Aptitude, Logical Reasoning, Verbal Ability
+
+Interview Duration:
+60 minutes
+
+Topics Asked:
+Array, Sliding Window
+
+Coding Questions Asked:
+1) if we are given a strictly increasing ordered numerical array of infinite length and we have to find a large number in the array, how should the searching be implemented
+2) Max subarray sum and sliding window approach
+
+Core Subject Questions:
+1) Networking questions about VPN, HTTPS etc
+2) OOPS questions about inheritance, polymorphism, abstraction and encapsulation. Questions were of difference type
+3) Core Java questions about static keyword, garbage collection
+4) Difference between final, finally, and finalize keywords in core Java
+5) Questions about numpy and pandas
+6) Data visualization conceptual questions
+7) If given the choice of working as a backend engineer and machine learning engineer, what would i prefer
+8) differences between traditional programming and machine learning
+9) data structure questions about sequential data structures such as stack queue array
+10) sql clauses like order by, where clause
+11) situational questions regarding sql joins and how would you implement give sql problem
+
+Project Discussion:
+1) Project Description about both of my projects
+2) As my projects were from Machine Learning domain, they asked me about L1 and L2 regularization
+3) Cost and loss function difference
+4) Bayesian Predictions
+
+Miscellaneous:
+1) Questions about my educational background
+2) Questions about my technical preferences
+
+
+================================================================================
+DOCUMENT 18
+================================================================================
+
+Company: Kanerika
+
+Source: Interview Experience
+
+CTC: 10
+
+Test Pattern:
+70 MCQs
+
+Test Duration:
+60 minutes
+
+Question Topics:
+Questions on Aptitude, Logical Reasoning and Verbal Ability
+
+Interview Duration:
+60 mins minutes
+
+Topics Asked:
+Neural Network, Data Science, Machine Learning, Data Structures and OOPs
+
+Coding Questions Asked:
+1. The 1st question was to be done on Python where I was asked to separate odd and even index elements in two separate lists.\
+2. 2nd Question was on Queue which I had to implement with the help of an array and there was some condition to shift the queue when front elements were empty. There were some edge cases.
+
+Core Subject Questions:
+1. I was asked the difference between Data Scientist and Data Engineer.
+2. I was asked what was Neural Network, Difference between ANN and CNN.
+3. Time complexity of Neural Network and then in depth discussion of Neural Network
+4. What is Abstraction in OOP, followed by Method Overloading and Method Overriding. I was asked to share my screen and code it in text file after explaining.
+5.  After that my projects were discussed.
+
+Project Discussion:
+1. Both my projects and my entire resume was on Machine Learning and Deep Learning so those were the main areas asked to me.
+2. I was asked to explain 1 of the projects among the two that were there.
+3. I explained the latest one which used YOLO and then the interviewer dove deep into what YOLO was why not use CNN and use YOLO instead.
+4. Gave me some conditions on how my Project will work in adverse conditions as both my project were traffic related.
+5. Discussed on the project for almost 20 to 25 mins.
+6. Gave me situational questions on how will you adjust response time of a vehicle turning when there are two roads one at 30 yards and other at 100 yards.
+
+Miscellaneous:
+HR Round was a simple and went on for 45 mins. Asked situation based questions and discussion about Family Background like what my parents does and things like that. One question asked to me in HR round was the my resume was entirely on ML and DL so what if they give me to work on a new technology like Web Development or Database Administrator, will I be flexible to work in it.
+
+Founder round after that was okay and it went for 30 mins. It was similar to HR round but it was mor focused on my project and gave me many situations to work around my project.
+
+
+================================================================================
+DOCUMENT 19
+================================================================================
+
+Company: Intellect Design Arena
+
+Source: Interview Experience
+
+CTC: ₹ 500,000 per Annum
+
+Test Pattern:
+10 MCQ, 2 SQL and  2 Coding
+
+Test Duration:
+120 minutes
+
+Question Topics:
+MCQ: Code output, SQL query, core technical.
+Coding : Complete the code, Exception handling, advanced java.
+SQL : Selecting and sorting.
+
+Interview Duration:
+20 minutes
+
+Topics Asked:
+Core Java, Advanced Java, SQL
+
+Coding Questions Asked:
+Not Available
+
+Core Subject Questions:
+Q1: Java versions specifications,
+Q2: Multithreading,
+Q3: Exception Handling,
+Q4: Why use finally when we can put the same code in try block.
+Q5: Spring boot functions.
+Q6: RestAPI
+Q7: Request and Response.
+Q6: DML/DDL
+
+Project Discussion:
+Have you used collections in your project?
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 20
+================================================================================
+
+Company: Intellect Design Arena
+
+Source: Interview Experience
+
+CTC: 5lpa
+
+Test Pattern:
+Puzzle,2 coding Questions 
+
+Test Duration:
+120 minutes
+
+Question Topics:
+Core java, oops
+
+Interview Duration:
+30 minutes minutes
+
+Topics Asked:
+Oops, DBMS, networking, core java, coding in java 
+
+Coding Questions Asked:
+1. Swapping of two numbers without using third variable in java .
+2. Reverse the string in java.
+
+Core Subject Questions:
+1. Give brief description of OOPS in java 
+2. What is DDL,DCL,DML in DBMS
+3. How to connect SQL with java
+
+Project Discussion:
+Not discussed 
+
+Miscellaneous:
+Just look at the camera because initially interviewer thought that I was looking at somewhere else and giving him my introduction the he made me remove my glasses so be carefull about this this can give wrong impression
+
+
+================================================================================
+DOCUMENT 21
+================================================================================
+
+Company: Quantiphi Analytics
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+R1 - MCQ + 3 DSA, R2 - 2 DSA
+
+Test Duration:
+R1 - 90, R2 - 45 minutes
+
+Question Topics:
+Core Subjects, Aptitude, Reasoning, Binary Search - 1, DP -1, Graph -1, Greedy - 1, Tree - 1
+
+Interview Duration:
+R1 - 30 min, R2 - 30 min, HR -20 min minutes
+
+Topics Asked:
+R1 - Totally Internship based and Project Based, SQL Query 
+R2 - Variation of count sort, AWS , RAG
+
+Coding Questions Asked:
+Q1 - Find Unique Element
+Q2 - House Robber
+Q3 - Variation of Count Sort
+Q4 - Find Second highest Salary (optimized)
+(Approach + Code)
+
+Core Subject Questions:
+Q1 - Job Scheduling
+
+Project Discussion:
+1) Explain Project and its features in detail.
+2) What is the purpose, why did you built it.
+3) What TechStack used, why you used it.
+4) Question on React Hooks, Promises etc.
+5) How deployment is done using AWS.
+6) Explain RAG and its working in your project.
+(Before this thorough discussion on my internship)
+
+Miscellaneous:
+R2 was smaller for me as i have done previous work on AWS , RAG and ML model so the interviewer didn't ask me much.
+
+
+================================================================================
+DOCUMENT 22
+================================================================================
+
+Company: Texas Instruments
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+2 parts mcq : 10 questions reasoning, 50 questions coding
+
+Test Duration:
+70 minutes
+
+Question Topics:
+Lots of topics from coding: Java, python, linux, finding output, dbms
+
+Interview Duration:
+120 minutes
+
+Topics Asked:
+array, trees, monotonic stack
+
+Coding Questions Asked:
+Top view of tree,
+next greater element, 
+Finding minimum length of subarray of all 1s
+Given a list of strings, group anagrams together
+
+Core Subject Questions:
+Practical concept and example of normalisation in DBMS
+System design view of DBMS and need of load balancer, read replicas and logging
+Error debugging in a full stack application
+Networking basics
+
+Project Discussion:
+Basic introduction of projects
+Discussion about work done in GSOC and freelance work
+Basics of Docker
+Linux commands
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 23
+================================================================================
+
+Company: Quantiphi Analytics
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+OA Round 1 - Virtual (3 Coding Questions & MCQs) + OA Round 2 - CCC (2 Coding Questions)
+
+Test Duration:
+120 + 60 minutes
+
+Question Topics:
+MCQ: Aptitude, Computer Fundamentals and Verbal ability 
+Coding: Binary Search, DP, Graph, Array
+
+Interview Duration:
+Round 1(Technical-Virtual): 60, Round 2(Technical-In Person): 30, Round 3(HR-In Person): 30 minutes
+
+Topics Asked:
+DBMS, SQL, Python, Machine Learning
+
+Coding Questions Asked:
+Python: Store any number of elements in a list through user input and return the second largest value. (I was asked to do this using 3 approaches)
+SQL: Create a database, Create an employee table, Insert values and display second highest salary.
+DSA: As my resume was ML based they don't ask any DSA question to me.
+
+Core Subject Questions:
+DBMS: ACID, Join Operations, Having vs Where, Delete vs Drop
+Python: List vs Tuple, Mutable vs Immutable 
+
+Project Discussion:
+- Objective of the project
+- Workflow of the project
+- Challenges faced during project building
+- Perform similarity search manually without using any inbuilt function
+- How your project is different from the existing applications
+
+Miscellaneous:
+Round 1: It was based on Computer fundamentals, Basic coding and Domain knowledge of your area of interest.
+Round 2: Completely project based in depth.
+Round 3: HR round
+
+
+================================================================================
+DOCUMENT 24
+================================================================================
+
+Company: EPAM Systems
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+25 MCQ, 2 Coding questions 
+
+Test Duration:
+90 minutes  minutes
+
+Question Topics:
+10 Aptitude, 15 From Core Subjects, 1 question from Graph, 1 from Dynamic Programming 
+
+Interview Duration:
+60 minutes
+
+Topics Asked:
+DBMS,Dynamic Programming, Tree , Operating System 
+
+Coding Questions Asked:
+Q1:Print Longest Palindromic Substring 
+Q2: House Robber 2 
+Q3: Given a tree check whether BST or not
+Q4: Consumer Producer problem 
+
+
+Core Subject Questions:
+Q1: Indexing in MySQL
+Q2: Joins, and types 
+Q3: Normalisation 
+Q4: SQL queries 
+
+Project Discussion:
+1) Integrated Razorpay in my project, asked about Integration Process 
+2) Used GenAI , asked about Langchain and GenAI
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 25
+================================================================================
+
+Company: Texas Instruments
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+55 MCQ
+
+Test Duration:
+75 minutes
+
+Question Topics:
+15 from Aptitude and Reasoning, 40 (evenly distributed) from Languages (C++, Java and Python) and theory subjects.
+
+Interview Duration:
+45 minutes
+
+Topics Asked:
+Arrays 
+
+Coding Questions Asked:
+Q1: Kadane's Algorithm 
+
+Core Subject Questions:
+Q1: TCP vs UDP. Which one is used for video streaming?
+Q2: Explain ARP and RARP Protocols.
+Q3: MAC vs IP address.
+Q4: Explain polymorphism. What are the differences between C++ and Java if both are OOPs based languages.
+Q5: Virtual vs Pure Virtual functions.
+Q6: What is kernel?
+Q7: Which commands are used in Linux for the following:
+a. Search for a particular pattern.
+b. View contents of a file.
+c. Append something at the end of file.
+Q8: chmod vs chown command. What does chmod 755 means?
+Q9: Which system do you prefer Ubuntu or Wndows? Why?
+Q10: Which GitHub command is used to create a new branch and which is used to change to already existing branch?
+
+Project Discussion:
+1). Asked which one is my favourite project among the three mentioned projects in resume. I answered chat app (A scalable app that used Redis and Kafka for scalability, MongoDb for persistence, Socket.io for real time communication and docker to run everything regardless of environment).
+2). Asked to explain the high level architecture of the project.
+3). Asked how scalability is ensured.
+4). Asked why I used docker.
+5). What is the role of redis.
+6). What will happen if redis service goes down? How can you manage redis unavailability?
+7). Why Kafka layer is added before the DB? Why not directly store data in DB?
+8). Asked if I know about RabbitMQ. Then asked why used Kafka over RabbitMQ.
+9). What is a socket?
+10). Asked if my application is broadcasting or unicasting the message sent by a user.
+11). How only group members can see the message sent in the group? Can anyone outside the group intercept/read the message sent in group.
+12). Moved to second project which is a flight management system based on microservices architecture. Asked what are advantages of microservices architecture and why I used it?
+13). Asked how security is ensured.
+14). Asked if I have exposed every API end point publicly. Answered no. Then asked why not.
+15) What is MVC model?
+16). What are Rest APIs and why are they so popular? What are some other types of APIs?
+
+Miscellaneous:
+Asked do you know Python. I answered I'm familiar with it. Then asked can you learn it. I answered yes, I can. Then asked how quickly you can learn it. I answered pretty quickly.
+
+
+================================================================================
+DOCUMENT 26
+================================================================================
+
+Company: Optum
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+Full stack web development 
+
+Test Duration:
+60 min minutes
+
+Question Topics:
+Introducing functionality in backend then frontend 
+Total 4 modules, with each one dependent on previous one.
+Api creation 
+Db involvement 
+You can use  one of the mentioned tech stack 
+Java dev(spring+angular+MyBatis)
+Mern(react+express+sequelize)
+.net
+Python (django)
+
+Interview Duration:
+60 minutes
+
+Topics Asked:
+stack, APIs, solid principal , web crawlers 
+
+Coding Questions Asked:
+Balanced paranthesis , function for working of web crawlers 
+
+Core Subject Questions:
+SOLID principal, REST APIs, difference between PUT and POST http method 
+
+Project Discussion:
+No project discussion with me, but depends on the interviewer as projects were discussed with some 
+
+Miscellaneous:
+Strength and weakness
+
+
+================================================================================
+DOCUMENT 27
+================================================================================
+
+Company: Kanerika
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+70 MCQ (4 sections)
+
+Test Duration:
+60min minutes
+
+Question Topics:
+Aptitude, LR, Verbal, Technical
+
+Interview Duration:
+4 interviews(technical 1(40-45), technical 2(30-35), HR round(15-20), CEO round(25-30)) minutes
+
+Topics Asked:
+Array, Binary search, LL, Tree
+
+Coding Questions Asked:
+Q1.Search element in an infinite array
+Q2.Swap alternate node
+Q3.2 sum
+Q4.zig-zag traversal in tree
+
+Core Subject Questions:
+Q1.oops(abstract class , interface with real life example)
+Q2.sql(question from joins)
+Q3.array was given write the sql query + cpp solution find the second largest no.(sql(highest salary variant).
+Q4.system design basics(CDN, how cdn works, what happend when you write enter a url)
+Q5.data modeling.
+
+Project Discussion:
+Q1.Explain project in breif
+Q2.which gemini model you have used
+Q3.Run project show the demo
+Q4.jwt tokens, cookies , session, api, token, oauth
+Q5.whats unique in your project
+Q6.Tell the business point of view(how it will help business to grow)
+Q7.Scalability and more.....
+
+
+
+Miscellaneous:
+HR Ques + Technical rounds
+
+Q1.Tell me something which is not in your resume(I told about drummer at music club + sports and etc) asked in technical 1 round
+Q2.situational based questions(An employee doing illegal activities in office and much more)
+Q3.family background
+Q4.Asked me about my travel experiences, musical journey.
+Q5. what my friends think about me.
+Q6.Describe when you work in team
+Q7.How do you keep update youself
+Q9.How do you face challenges
+Q10.strengths
+
+overall good experience
+
+
+================================================================================
+DOCUMENT 28
+================================================================================
+
+Company: Qolaris Data
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+50 mcq
+
+Test Duration:
+120 minutes
+
+Question Topics:
+quants, logical reasoning, coding round to build application using nodejs, react
+
+Interview Duration:
+20-30 minutes
+
+Topics Asked:
+microservices, projects that i have made, asked about circuit breaker, question on scaling the project like system design ques basically
+
+Coding Questions Asked:
+Not Available
+
+Core Subject Questions:
+Not Available
+
+Project Discussion:
+Not Available
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 29
+================================================================================
+
+Company: EPAM Systems
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+https://www.geeksforgeeks.org/interview-experiences/epam-systems-interview-experience-for-jr-software-engineer/
+
+Test Duration:
+https://www.geeksforgeeks.org/interview-experiences/epam-systems-interview-experience-for-jr-software-engineer/ minutes
+
+Question Topics:
+https://www.geeksforgeeks.org/interview-experiences/epam-systems-interview-experience-for-jr-software-engineer/
+
+Interview Duration:
+https://www.geeksforgeeks.org/interview-experiences/epam-systems-interview-experience-for-jr-software-engineer/ minutes
+
+Topics Asked:
+https://www.geeksforgeeks.org/interview-experiences/epam-systems-interview-experience-for-jr-software-engineer/
+
+Coding Questions Asked:
+Not Available
+
+Core Subject Questions:
+Not Available
+
+Project Discussion:
+Not Available
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 30
+================================================================================
+
+Company: Intellect Design Arena
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+10 MCQs
+DSA Coding Question
+1 Java-Based Question
+1 SQL Query Question
+
+Test Duration:
+120 mints minutes
+
+Question Topics:
+1 Array based coding question, OOPS concept based MCQs
+
+Interview Duration:
+30 mints minutes
+
+Topics Asked:
+Encryption vs Hashing
+Sliding Window 
+Array 
+OOPs concept
+IOC and Dependency Injection
+
+Coding Questions Asked:
+643 Leetcode. Maximum Average Subarray I
+605 Leetcode. Can Place Flowers
+
+Core Subject Questions:
+Dependency Injection and IOC
+How many ways can we create the string object?
+
+Project Discussion:
+DDOS Definition
+
+Miscellaneous:
+Tell me about your family
+
+
+================================================================================
+DOCUMENT 31
+================================================================================
+
+Company: Intellect Design Arena
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+10 MCQ, 2 Coding, 2 SQl
+
+Test Duration:
+120 minutes minutes
+
+Question Topics:
+Basics of Java, OOPs and SQL
+Coding question 
+1 OOPs based
+2.Advance array question based on permutation
+
+Interview Duration:
+10-15 minute minutes
+
+Topics Asked:
+Array
+
+Coding Questions Asked:
+1. Second largest number in array. Its time complexity and space complexity and also asked why?
+2. Kth largest in the array
+3. How you convert string to integer in java.
+4. Tell me about your family background
+
+
+Core Subject Questions:
+DSA
+
+Project Discussion:
+Didn't ask
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 32
+================================================================================
+
+Company: Qolaris Data
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+50 MCQ, 1 development question 
+
+Test Duration:
+60 min minutes
+
+Question Topics:
+20 Math, 20 Reasoning, 10 English and build small program using React, Node.js, MySQL.
+
+Interview Duration:
+10-15 minutes minutes
+
+Topics Asked:
+Development based question (related to development question asked by them)
+
+Coding Questions Asked:
+Not Available
+
+Core Subject Questions:
+Not Available
+
+Project Discussion:
+Not Available
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 33
+================================================================================
+
+Company: Intellect Design Arena
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+
+2 coding question , 2-3 hr question  discussion
+
+Test Duration:
+15 minute minutes
+
+Question Topics:
+(2 simple + 1 medium  ) coding question
+
+Interview Duration:
+15 minutes
+
+Topics Asked:
+priority queue , array 
+
+Coding Questions Asked:
+1.Second largest by multiple approach as you can and their time complexity 
+2.kth largest number in vector string optimize code and time complexity ( I use cpp in both question ) 
+3. String to integer  code in java 
+
+
+Core Subject Questions:
+Not Available
+
+Project Discussion:
+Not Available
+
+Miscellaneous:
+Hr question ->  family background , why to choose master
+
+
+================================================================================
+DOCUMENT 34
+================================================================================
+
+Company: Infosys
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+4 Coding Problems ( 1- Easy , 1- Medium, 1- Hard, 1- Complex)
+
+
+Test Duration:
+180 minutes  minutes
+
+Question Topics:
+Problems was based on DP, Recursion, Greedy.
+
+Interview Duration:
+Around 30-35 minutes ( L1 role) minutes
+
+Topics Asked:
+Graph Traversal (BFS, DFS), Cycle Detection in Directed Graph, Topological Sort, Node.js & Express.js (Promises, Event Loop, Event-Driven Programming, require(), etc..), SQL Queries (Second Highest Salary), Operating System (Deadlock, Banker’s Algorithm), AI Basics (ChatGPT, LLM).
+
+Coding Questions Asked:
+Q1: Write pseudo code for BFS and DFS traversal in a graph.
+Q2: Detect cycle in a directed graph and explain the approach.
+Q3: Write code for Topological Sorting in a directed graph.
+Q4: SQL query to find the second highest salary from a table and explain the case when only one record exists.
+
+Core Subject Questions:
+1) What is Event Loop in Node.js?
+2) Explain Event-Driven Programming.
+3) What are Promises and how they are used in Express.js?
+4) Why do we use require() in Node.js / Express?
+5) What is Banker’s Algorithm, Can You Draw Diagram and why is it used?
+6) Explain Deadlock and Approch to Handle Deadlock.
+7) What is an LLM (Large Language Model)?
+8) What is ChatGPT and how does it work?
+
+Project Discussion:
+Only basic discussion about the project — Introduction and it's functionality.
+
+Miscellaneous:
+Not Available
+
+
+================================================================================
+DOCUMENT 35
+================================================================================
+
+Company: Infosys
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+4 coding questions  only 
+Easy , Medium , Hard, Complex
+
+Test Duration:
+180 min minutes
+
+Question Topics:
+Dynamic Programming ,Greedy Algorithms
+
+Interview Duration:
+30 to 35 min minutes
+
+Topics Asked:
+Python Concepts – Generator, Namespace
+
+Graph Algorithms – DFS, BFS, Topological Sort, Kahn’s Algorithm
+
+Machine Learning Basics – Overfitting, Underfitting, Neural Networks, CNN, SVM, One Hot         
+                                                Encoding 
+
+
+Coding Questions Asked:
+Explain the approach and write pseudocode for Depth First Search (DFS) in a graph.
+
+ Explain the approach and write pseudocode for Breadth First Search (BFS) in a graph.
+
+Explain how Topological Sort and Kahn’s Algorithm work.
+
+Core Subject Questions:
+No core CS subject questions were asked during the interview.
+
+The discussion mainly focused on Python concepts, graph algorithms, machine learning basics, and project-related questions, since my resume was mainly based on data science projects and skills.
+
+Project Discussion:
+1. Asked about the future improvements that can be made to enhance the project.
+2. Asked about the technologies used in my project.
+
+Miscellaneous:
+The interview was mainly focused on DSA concepts and skills  mentioned in  resume. The interviewer focused more on understanding the approach and logic rather than writing the exact code, and asked to explain solutions using pseudocode. Make sure you are well prepared with all the skills, technologies, and projects mentioned in your resume.
+
+
+================================================================================
+DOCUMENT 36
+================================================================================
+
+Company: Accenture
+
+Source: Batch 2026
+
+CTC: Not Available
+
+Test Pattern:
+1st Round        Behavioral Assessment (Psychometric)        54 Questions        20 min
+               Cognitive Assessment (Gamified)        3 Questions        20 min
+2nd Round        Technical Assessment (MCQs)        45 Questions        45 min
+Coding Assessment        3 Questions        60 min
+3rd Round        Communication Assessment        20 Questions(approx.)        30 min
+
+Test Duration:
+115 minutes
+
+Question Topics:
+Technical Assessment (MCQ's):
+Common Applications and MS Office
+PseudoCode (focus on xor operations 20 questions easy scoring)
+Network
+Security and Cloud
+Total Questions: 45 Questions
+
+Coding:
+DSA
+SQL
+Java/JavaScript
+HTML/CSS
+.Net
+Total Questions: 3 
+
+
+Interview Duration:
+45 min minutes
+
+Topics Asked:
+projects discussed (spring boot, gen ai) + hr questions
+
+Coding Questions Asked:
+-
+
+Core Subject Questions:
+-
+
+Project Discussion:
+1.) Event Ticketing platform (spring boot) explanation of how the project works.
+2.) chatbot that answers questions about a YouTube video using its transcript, powered by LangChain and an OpenAI LLM (discussed about llm and LangChain in detail of how it works)
+3.)hr questions
+Tell me about yourself.
+Why do you want to work at Accenture?
+What are your strengths and weaknesses?
+Where do you see yourself in 5 years?
+Tell me about a challenge you faced and how you handled it.
+How do you handle working in a team?
+Why should we hire you?
+Do you have any questions for us?
+
+Miscellaneous:
+key is good communication
+
