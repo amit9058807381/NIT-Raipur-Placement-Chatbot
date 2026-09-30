@@ -4,9 +4,7 @@ import Login from "./Login";
 import Register from "./Register";
 
 function App() {
-  // ==============================
   // USER
-  // ==============================
 
   const [user, setUser] = useState(() => {
     const savedUser = localStorage.getItem("user");
@@ -16,18 +14,16 @@ function App() {
 
   const [showRegister, setShowRegister] = useState(false);
 
-  // ==============================
+  
   // CHAT STATES
-  // ==============================
 
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [conversationId, setConversationId] = useState("");
   const [chatHistory, setChatHistory] = useState([]);
 
-  // ==============================
+
   // AUTO SCROLL
-  // ==============================
 
   const messagesEndRef = useRef(null);
 
@@ -37,9 +33,9 @@ function App() {
   // User right-click menu
   const [userMenu, setUserMenu] = useState(null);
 
-  // ==============================
+  
   // AUTO SCROLL WHEN MESSAGES CHANGE
-  // ==============================
+  
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({
@@ -47,9 +43,8 @@ function App() {
     });
   }, [messages]);
 
-  // ==============================
+  
   // LOGIN
-  // ==============================
 
   const handleLogin = (data) => {
     const loggedInUser = {
@@ -65,9 +60,8 @@ function App() {
     setUser(loggedInUser);
   };
 
-  // ==============================
+  
   // REGISTER
-  // ==============================
 
   const handleRegister = (registeredUser) => {
     if (registeredUser) {
@@ -78,9 +72,8 @@ function App() {
     }
   };
 
-  // ==============================
+  
   // LOGOUT
-  // ==============================
 
   const handleLogout = () => {
     localStorage.removeItem("user");
@@ -96,9 +89,8 @@ function App() {
     setUserMenu(null);
   };
 
-  // ==============================
+  
   // LOAD CHAT HISTORY
-  // ==============================
 
   const loadChatHistory = async () => {
     if (!user?.email) {
@@ -130,9 +122,8 @@ function App() {
     }
   };
 
-  // ==============================
+  
   // LOAD HISTORY AFTER LOGIN
-  // ==============================
 
   useEffect(() => {
     if (user?.email) {
@@ -140,9 +131,8 @@ function App() {
     }
   }, [user]);
 
-  // ==============================
+  
   // CREATE NEW CHAT
-  // ==============================
 
   const createNewChat = async () => {
     if (!user?.email) {
@@ -192,9 +182,8 @@ function App() {
     }
   };
 
-  // ==============================
+
   // OPEN EXISTING CHAT
-  // ==============================
 
   const openChat = async (id) => {
     console.log(
@@ -249,9 +238,8 @@ function App() {
     }
   };
 
-  // ==============================
+  
   // DELETE CHAT
-  // ==============================
 
   const deleteChat = async (id) => {
     console.log(
@@ -311,9 +299,8 @@ function App() {
     }
   };
 
-  // ==============================
+  
   // SEND MESSAGE
-  // ==============================
 
   const sendMessage = async () => {
     if (!message.trim()) {
@@ -333,9 +320,8 @@ function App() {
       conversationId;
 
     try {
-      // ==============================
+      
       // AUTO CREATE CHAT
-      // ==============================
 
       if (!currentConversationId) {
         const createResponse =
@@ -386,9 +372,8 @@ function App() {
         ]);
       }
 
-      // ==============================
+      
       // SEND QUESTION
-      // ==============================
 
       const response =
         await fetch(
@@ -418,9 +403,8 @@ function App() {
         );
       }
 
-      // ==============================
+      
       // AI RESPONSE
-      // ==============================
 
       setMessages((prev) => [
         ...prev,
@@ -430,9 +414,8 @@ function App() {
         },
       ]);
 
-      // ==============================
+      
       // UPDATE SIDEBAR
-      // ==============================
 
       await loadChatHistory();
     } catch (error) {
@@ -452,9 +435,7 @@ function App() {
     }
   };
 
-  // ==============================
   // CLOSE MENUS
-  // ==============================
 
   useEffect(() => {
     const closeMenu = () => {
@@ -475,9 +456,8 @@ function App() {
     };
   }, []);
 
-  // ==============================
+  
   // LOGIN / REGISTER
-  // ==============================
 
   if (!user) {
     if (showRegister) {
@@ -500,9 +480,8 @@ function App() {
     );
   }
 
-  // ==============================
+  
   // MAIN CHAT PAGE
-  // ==============================
 
   return (
     <div
@@ -625,7 +604,7 @@ function App() {
 
       {/* =========================
           CHAT AREA
-      ========================== */}
+      ==========================*/}
 
       <main className="chat-area">
 
