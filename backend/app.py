@@ -1,4 +1,5 @@
 import os
+import re
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
@@ -253,6 +254,7 @@ def create_conversation():
 
     email = data.get("email")
 
+
     if not email:
 
         return jsonify({
@@ -302,6 +304,7 @@ def create_conversation():
 def get_conversations():
 
     email = request.args.get("email")
+
 
     if not email:
 
@@ -374,6 +377,7 @@ def get_conversations():
 def get_messages(conversation_id):
 
     email = request.args.get("email")
+
 
     if not email:
 
@@ -565,6 +569,85 @@ def chat():
 
 
     # ----------------------------------------------
+    # STUDY PLAN REQUEST DETECTION
+    # ----------------------------------------------
+
+    study_plan_keywords = [
+
+        "study plan",
+
+        "preparation plan",
+
+        "prepare",
+
+        "preparation",
+
+        "interview plan",
+
+        "days left",
+
+        "day plan",
+
+        "din ka plan",
+
+        "din baad interview",
+
+        "interview ke liye",
+
+        "preparation karni hai"
+
+    ]
+
+
+    is_study_plan_request = any(
+
+        keyword in query.lower()
+
+        for keyword in study_plan_keywords
+
+    )
+
+
+    # ==========================================
+    # DETECT NUMBER OF DAYS
+    # ==========================================
+
+    requested_days = None
+
+    day_patterns = [
+        r"(\d+)\s*days?",
+        r"(\d+)\s*day",
+        r"(\d+)\s*din",
+        r"(\d+)\s*days?\s*(?:left|baad)",
+        r"(\d+)\s*din\s*(?:baad|bache)"
+    ]
+
+    for pattern in day_patterns:
+
+        match = re.search(
+            pattern,
+            query.lower()
+        )
+
+        if match:
+            requested_days = int(match.group(1))
+            break
+
+
+    # ==========================================
+    # HANDLE TOMORROW / KAL
+    # ==========================================
+
+    if requested_days is None:
+
+        if (
+            "tomorrow" in query.lower()
+            or "kal" in query.lower()
+        ):
+            requested_days = 1
+
+
+    # ----------------------------------------------
     # Check conversation belongs to user
     # ----------------------------------------------
 
@@ -600,29 +683,52 @@ def chat():
     # Create query embedding
     # ----------------------------------------------
 
-    response = client.models.embed_content(
+    try:
 
-        model="gemini-embedding-001",
+        response = client.models.embed_content(
 
-        contents=query
+            model="gemini-embedding-001",
 
-    )
+            contents=query
 
+        )
 
-    query_embedding = response.embeddings[0].values
+        query_embedding = response.embeddings[0].values
+
+    except Exception as e:
+
+        print("Embedding Error:", e)
+
+        return jsonify({
+
+            "error": "Unable to process the query embedding"
+
+        }), 500
 
 
     # ----------------------------------------------
     # Search ChromaDB
     # ----------------------------------------------
 
-    results = collection.query(
+    try:
 
-        query_embeddings=[query_embedding],
+        results = collection.query(
 
-        n_results=3
+            query_embeddings=[query_embedding],
 
-    )
+            n_results=3
+
+        )
+
+    except Exception as e:
+
+        print("ChromaDB Error:", e)
+
+        return jsonify({
+
+            "error": "Unable to search placement data"
+
+        }), 500
 
 
     # ----------------------------------------------
@@ -639,46 +745,332 @@ def chat():
     context = "\n\n".join(documents)
 
 
-    # ----------------------------------------------
-    # RAG Prompt
-    # ----------------------------------------------
+    # ==================================================
+    # RAG PROMPT
+    # ==================================================
 
-    prompt = f"""
+    if is_study_plan_request:
 
-You are an NIT Raipur placement and interview assistant.
+        prompt = f"""
+You are an NIT Raipur placement and interview preparation assistant.
 
-Answer the user's question using ONLY the information
-provided in the context below.
+The user is asking for a study/preparation plan.
 
-If the answer is not available in the context,
-say that the information is not available in the
-placement data.
+IMPORTANT RULES:
 
-Do not make up information.
+1. Use ONLY the placement information provided in the Context.
 
-Context:
+2. Do NOT use outside knowledge.
+
+3. Do NOT invent interview topics, coding questions,
+   subjects, HR questions or company information.
+
+4. Identify the company relevant to the user's current
+   conversation/question from the Context.
+
+5. Create the study plan ONLY from topics/questions
+   actually present in the retrieved placement records.
+
+6. The number of days in the plan MUST match the number
+   of days requested by the user.
+
+7. If the user says:
+   "2 days"
+   create exactly 2 days.
+
+8. If the user says:
+   "5 days"
+   create exactly 5 days.
+
+9. Do not create extra days.
+
+10. Distribute the available reported topics across
+    the requested number of days.
+
+11. Prioritize topics that were actually asked in the
+    company's reported interview experience.
+
+12. If coding questions are available, include them
+    in the preparation plan.
+
+13. If core subject questions are available, include them.
+
+14. If project discussion is available, include project
+    preparation.
+
+15. If HR or miscellaneous questions are available,
+    include them.
+
+16. Do not claim that a topic was asked if it is not
+    present in the Context.
+
+17. If the requested number of days is larger than the
+    available information, distribute the available
+    topics across the requested days without inventing
+    new topics.
+
+18. Use Markdown formatting.
+
+19. Keep the plan practical and easy to follow.
+
+20. Mention the actual company name when it is available.
+
+--------------------------------------------------
+STUDY PLAN FORMAT
+--------------------------------------------------
+
+Use this structure:
+
+## <Number>-Day <Company> Interview Preparation Plan
+
+### Day 1
+
+**Topics to Study:**
+- Topic from reported experience
+- Topic from reported experience
+
+**Practice:**
+- Actual reported coding/interview question
+
+### Day 2
+
+**Topics to Study:**
+- Topic from reported experience
+
+**Practice:**
+- Actual reported question
+
+Continue until EXACTLY the requested number of days
+has been completed.
+
+--------------------------------------------------
+CONTEXT
+--------------------------------------------------
+
 {context}
 
-User Question:
+--------------------------------------------------
+USER QUESTION
+--------------------------------------------------
+
 {query}
 
+--------------------------------------------------
+FINAL ANSWER
+--------------------------------------------------
 """
 
+    else:
+
+        prompt = f"""
+You are an NIT Raipur placement and interview assistant.
+
+Your job is to answer the user's question using ONLY
+the placement information provided in the Context.
+
+The user has exactly {requested_days} day(s) available for preparation.
+
+IMPORTANT RULES:
+
+1. Do NOT make up any information.
+
+2. Do NOT use outside knowledge.
+
+3. If the requested information is not available in
+   the Context, clearly say:
+
+   "This information is not available in the placement data."
+
+4. Use Markdown formatting.
+
+5. Make the answer clean, structured and easy to read.
+
+6. Whenever a placement experience is being described,
+   use the original placement column names as headings.
+
+7. Do NOT combine different placement experiences.
+
+8. If multiple companies or multiple records are
+   relevant, show them separately.
+
+9. If the user asks about one specific field, such as
+   coding questions, show only the relevant field.
+
+10. If the user asks for complete company information,
+    show all available relevant fields.
+
+11. Do not create values for fields that are missing.
+
+12. Keep the answer concise but informative.
+
+13. The study plan MUST contain exactly {requested_days} days.
+
+14. Do NOT create fewer or more than {requested_days} days.
+
+15. Distribute the available reported topics across
+   exactly {requested_days} days.
+
+16. Create the study plan ONLY from topics and questions
+    actually present in the retrieved placement records.
+
+17. If coding questions are available, include them.
+
+18. If project discussion is available, include it.
+
+19. If core subject questions are available, include them.
+
+20. Do NOT invent topics just to fill the requested days.
+--------------------------------------------------
+STRUCTURED FORMAT
+--------------------------------------------------
+
+When complete placement information is available,
+follow this format:
+
+### Company Name: <company>
+
+**Source:** <source>
+
+**CTC:** <ctc>
+
+**Test Pattern:** <test pattern>
+
+**Test Duration:** <test duration>
+
+**Question Topics:** <question topics>
+
+**Interview Duration:** <interview duration>
+
+**Topics Asked:** <topics asked>
+
+**Coding Questions Asked:** <coding questions>
+
+**Core Subject Questions:** <core subject questions>
+
+**Project Discussion:** <project discussion>
+
+**Miscellaneous:** <miscellaneous>
+
+Only display fields that actually exist in the
+retrieved context.
+
+--------------------------------------------------
+MULTIPLE EXPERIENCES
+--------------------------------------------------
+
+If more than one placement experience is relevant,
+separate them clearly:
+
+### Company Name: Optum
+
+**Source:** ...
+
+**CTC:** ...
+
+**Test Pattern:** ...
+
+...
+
+---
+
+### Company Name: Deloitte
+
+**Source:** ...
+
+**CTC:** ...
+
+**Test Pattern:** ...
+
+...
+
+--------------------------------------------------
+FIELD-SPECIFIC QUESTIONS
+--------------------------------------------------
+
+If the user asks:
+
+"What coding questions were asked in Optum?"
+
+Answer like:
+
+### Optum
+
+**Coding Questions Asked:**
+
+- Question 1
+- Question 2
+- Question 3
+
+Do NOT show unrelated fields.
+
+If the user asks:
+
+"What was the test pattern of Optum?"
+
+Answer like:
+
+### Optum
+
+**Test Pattern:** ...
+
+--------------------------------------------------
+IMPORTANT
+--------------------------------------------------
+
+Preserve the actual information from the retrieved
+placement records.
+
+Do not change company names.
+
+Do not change CTC values.
+
+Do not invent missing values.
+
+Do not merge two different records just because
+the company name is the same.
+
+--------------------------------------------------
+CONTEXT
+--------------------------------------------------
+
+{context}
+
+--------------------------------------------------
+USER QUESTION
+--------------------------------------------------
+
+{query}
+
+--------------------------------------------------
+FINAL ANSWER
+--------------------------------------------------
+"""
 
     # ----------------------------------------------
     # Generate answer
     # ----------------------------------------------
 
-    answer_response = client.models.generate_content(
+    try:
 
-        model="gemini-3.1-flash-lite",
+        answer_response = client.models.generate_content(
 
-        contents=prompt
+            model="gemini-3.1-flash-lite",
 
-    )
+            contents=prompt
 
+        )
 
-    answer = answer_response.text
+        answer = answer_response.text
+
+    except Exception as e:
+
+        print("Gemini Generation Error:", e)
+
+        return jsonify({
+
+            "error": "Unable to generate answer"
+
+        }), 500
 
 
     # ----------------------------------------------
@@ -747,7 +1139,6 @@ User Question:
             }
 
         )
-
 
     else:
 

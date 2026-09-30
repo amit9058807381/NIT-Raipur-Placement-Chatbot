@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import ReactMarkdown from "react-markdown";
 import Login from "./Login";
 import Register from "./Register";
 
@@ -24,11 +25,27 @@ function App() {
   const [conversationId, setConversationId] = useState("");
   const [chatHistory, setChatHistory] = useState([]);
 
+  // ==============================
+  // AUTO SCROLL
+  // ==============================
+
+  const messagesEndRef = useRef(null);
+
   // Chat delete menu
   const [contextMenu, setContextMenu] = useState(null);
 
   // User right-click menu
   const [userMenu, setUserMenu] = useState(null);
+
+  // ==============================
+  // AUTO SCROLL WHEN MESSAGES CHANGE
+  // ==============================
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }, [messages]);
 
   // ==============================
   // LOGIN
@@ -105,7 +122,6 @@ function App() {
       }
 
       setChatHistory(data);
-
     } catch (error) {
       console.error(
         "History error:",
@@ -168,7 +184,6 @@ function App() {
 
       setContextMenu(null);
       setUserMenu(null);
-
     } catch (error) {
       console.error(
         "New chat error:",
@@ -226,7 +241,6 @@ function App() {
 
       setContextMenu(null);
       setUserMenu(null);
-
     } catch (error) {
       console.error(
         "Open chat error:",
@@ -289,7 +303,6 @@ function App() {
       }
 
       setContextMenu(null);
-
     } catch (error) {
       console.error(
         "Delete chat error:",
@@ -363,7 +376,6 @@ function App() {
             content: userMessage,
           },
         ]);
-
       } else {
         setMessages((prev) => [
           ...prev,
@@ -423,7 +435,6 @@ function App() {
       // ==============================
 
       await loadChatHistory();
-
     } catch (error) {
       console.error(
         "Send message error:",
@@ -593,22 +604,23 @@ function App() {
             USER SECTION
         ========================== */}
 
-            <div
-  className="user-section"
-  onContextMenu={(e) => {
-    e.preventDefault();
-    e.stopPropagation();
+        <div
+          className="user-section"
+          onContextMenu={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
 
-    setContextMenu(null);
+            setContextMenu(null);
 
-    setUserMenu({
-      x: e.clientX,
-      y: e.clientY,
-    });
-  }}
->
-  👤 {user.name}
-</div>
+            setUserMenu({
+              x: e.clientX,
+              y: e.clientY,
+            });
+          }}
+        >
+          👤 {user.name}
+        </div>
+
       </aside>
 
       {/* =========================
@@ -661,9 +673,21 @@ function App() {
                     }
                   </strong>
 
-                  <p>
-                    {msg.content}
-                  </p>
+                  {msg.role === "assistant" ? (
+
+                    <div className="markdown-content">
+                      <ReactMarkdown>
+                        {msg.content}
+                      </ReactMarkdown>
+                    </div>
+
+                  ) : (
+
+                    <p>
+                      {msg.content}
+                    </p>
+
+                  )}
 
                 </div>
 
@@ -671,6 +695,10 @@ function App() {
             )
 
           )}
+
+          {/* AUTO SCROLL TARGET */}
+
+          <div ref={messagesEndRef}></div>
 
         </div>
 
@@ -749,10 +777,10 @@ function App() {
         <div
           className="context-menu user-menu"
           style={{
-  position: "fixed",
-  left: userMenu.x,
-  top: userMenu.y - 100,
-}}
+            position: "fixed",
+            left: userMenu.x,
+            top: userMenu.y - 100,
+          }}
           onClick={(e) => {
             e.stopPropagation();
           }}
