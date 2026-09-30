@@ -13,9 +13,8 @@ from datetime import datetime
 from bson import ObjectId
 
 
-# ==================================================
 # 1. Load environment variables
-# ==================================================
+
 
 load_dotenv()
 
@@ -33,27 +32,26 @@ if not mongodb_uri:
     exit()
 
 
-# ==================================================
+
 # 2. Create Flask app
-# ==================================================
+
 
 app = Flask(__name__)
 
 CORS(app)
 
 
-# ==================================================
+
 # 3. Create Gemini client
-# ==================================================
+
 
 client = genai.Client(
     api_key=api_key
 )
 
 
-# ==================================================
+
 # 4. Connect to ChromaDB
-# ==================================================
 
 chroma_client = chromadb.PersistentClient(
     path="chroma_db"
@@ -64,9 +62,9 @@ collection = chroma_client.get_collection(
 )
 
 
-# ==================================================
+
 # 5. Connect to MongoDB Atlas
-# ==================================================
+
 
 mongo_client = MongoClient(
     mongodb_uri
@@ -81,9 +79,9 @@ conversations_collection = db["conversations"]
 messages_collection = db["messages"]
 
 
-# ==================================================
+
 # 6. Home / Health Check
-# ==================================================
+
 
 @app.route("/", methods=["GET"])
 def home():
@@ -93,9 +91,8 @@ def home():
     })
 
 
-# ==================================================
+
 # 7. USER REGISTRATION
-# ==================================================
 
 @app.route("/api/auth/register", methods=["POST"])
 def register():
@@ -107,9 +104,9 @@ def register():
     password = data.get("password")
 
 
-    # ----------------------------------------------
+    
     # Validate fields
-    # ----------------------------------------------
+    
 
     if not name or not email or not password:
 
@@ -118,9 +115,9 @@ def register():
         }), 400
 
 
-    # ----------------------------------------------
+    
     # Check existing user
-    # ----------------------------------------------
+    
 
     existing_user = users_collection.find_one({
         "email": email
@@ -133,9 +130,9 @@ def register():
         }), 409
 
 
-    # ----------------------------------------------
+    
     # Hash password
-    # ----------------------------------------------
+    
 
     password_hash = bcrypt.hashpw(
         password.encode("utf-8"),
@@ -143,9 +140,9 @@ def register():
     )
 
 
-    # ----------------------------------------------
+    
     # Save user in MongoDB
-    # ----------------------------------------------
+    
 
     users_collection.insert_one({
 
@@ -158,9 +155,9 @@ def register():
     })
 
 
-    # ----------------------------------------------
+    
     # Response
-    # ----------------------------------------------
+    
 
     return jsonify({
 
@@ -169,9 +166,9 @@ def register():
     }), 201
 
 
-# ==================================================
+
 # 8. USER LOGIN
-# ==================================================
+
 
 @app.route("/api/auth/login", methods=["POST"])
 def login():
@@ -180,12 +177,10 @@ def login():
 
     email = data.get("email")
     password = data.get("password")
+    
 
-
-    # ----------------------------------------------
-    # Validate fields
-    # ----------------------------------------------
-
+    # Validate field
+    
     if not email or not password:
 
         return jsonify({
@@ -193,9 +188,9 @@ def login():
         }), 400
 
 
-    # ----------------------------------------------
+    
     # Find user
-    # ----------------------------------------------
+    
 
     user = users_collection.find_one({
         "email": email
@@ -208,9 +203,8 @@ def login():
         }), 401
 
 
-    # ----------------------------------------------
+
     # Check password
-    # ----------------------------------------------
 
     password_match = bcrypt.checkpw(
 
@@ -228,9 +222,8 @@ def login():
         }), 401
 
 
-    # ----------------------------------------------
+    
     # Login successful
-    # ----------------------------------------------
 
     return jsonify({
 
@@ -243,9 +236,8 @@ def login():
     }), 200
 
 
-# ==================================================
+
 # 9. CREATE NEW CONVERSATION
-# ==================================================
 
 @app.route("/api/conversations", methods=["POST"])
 def create_conversation():
@@ -296,9 +288,8 @@ def create_conversation():
     }), 201
 
 
-# ==================================================
+
 # 10. GET CHAT HISTORY
-# ==================================================
 
 @app.route("/api/conversations", methods=["GET"])
 def get_conversations():
@@ -366,9 +357,8 @@ def get_conversations():
     return jsonify(result), 200
 
 
-# ==================================================
+
 # 11. GET MESSAGES OF A CONVERSATION
-# ==================================================
 
 @app.route(
     "/api/conversations/<conversation_id>",
@@ -386,9 +376,8 @@ def get_messages(conversation_id):
         }), 400
 
 
-    # ----------------------------------------------
+    
     # Check conversation belongs to this user
-    # ----------------------------------------------
 
     try:
 
@@ -414,9 +403,8 @@ def get_messages(conversation_id):
         }), 404
 
 
-    # ----------------------------------------------
+    
     # Get messages of this user's conversation
-    # ----------------------------------------------
 
     messages = messages_collection.find({
 
@@ -450,9 +438,8 @@ def get_messages(conversation_id):
     return jsonify(chat_messages), 200
 
 
-# ==================================================
+
 # 12. DELETE CONVERSATION
-# ==================================================
 
 @app.route(
     "/api/conversations/<conversation_id>",
@@ -511,9 +498,8 @@ def delete_conversation(conversation_id):
     }), 200
 
 
-# ==================================================
+
 # 13. CHAT / RAG API
-# ==================================================
 
 @app.route("/api/chat", methods=["POST"])
 def chat():
@@ -529,9 +515,8 @@ def chat():
     )
 
 
-    # ----------------------------------------------
+    
     # Validate query
-    # ----------------------------------------------
 
     if not query:
 
@@ -542,9 +527,8 @@ def chat():
         }), 400
 
 
-    # ----------------------------------------------
+    
     # Validate email
-    # ----------------------------------------------
 
     if not email:
 
@@ -555,9 +539,8 @@ def chat():
         }), 400
 
 
-    # ----------------------------------------------
+    
     # Validate conversation
-    # ----------------------------------------------
 
     if not conversation_id:
 
@@ -568,9 +551,8 @@ def chat():
         }), 400
 
 
-    # ----------------------------------------------
+    
     # STUDY PLAN REQUEST DETECTION
-    # ----------------------------------------------
 
     study_plan_keywords = [
 
@@ -608,9 +590,8 @@ def chat():
     )
 
 
-    # ==========================================
+    
     # DETECT NUMBER OF DAYS
-    # ==========================================
 
     requested_days = None
 
@@ -634,9 +615,8 @@ def chat():
             break
 
 
-    # ==========================================
+    
     # HANDLE TOMORROW / KAL
-    # ==========================================
 
     if requested_days is None:
 
@@ -647,9 +627,8 @@ def chat():
             requested_days = 1
 
 
-    # ----------------------------------------------
+    
     # Check conversation belongs to user
-    # ----------------------------------------------
 
     try:
 
@@ -679,9 +658,8 @@ def chat():
         }), 404
 
 
-    # ----------------------------------------------
+    
     # Create query embedding
-    # ----------------------------------------------
 
     try:
 
@@ -706,9 +684,9 @@ def chat():
         }), 500
 
 
-    # ----------------------------------------------
+    
     # Search ChromaDB
-    # ----------------------------------------------
+    
 
     try:
 
@@ -731,23 +709,20 @@ def chat():
         }), 500
 
 
-    # ----------------------------------------------
+    
     # Get documents
-    # ----------------------------------------------
 
     documents = results["documents"][0]
 
 
-    # ----------------------------------------------
+    
     # Create context
-    # ----------------------------------------------
 
     context = "\n\n".join(documents)
 
 
-    # ==================================================
+    
     # RAG PROMPT
-    # ==================================================
 
     if is_study_plan_request:
 
@@ -1046,9 +1021,8 @@ FINAL ANSWER
 --------------------------------------------------
 """
 
-    # ----------------------------------------------
+
     # Generate answer
-    # ----------------------------------------------
 
     try:
 
@@ -1073,9 +1047,8 @@ FINAL ANSWER
         }), 500
 
 
-    # ----------------------------------------------
+    
     # Save user message
-    # ----------------------------------------------
 
     current_time = datetime.utcnow()
 
@@ -1095,9 +1068,8 @@ FINAL ANSWER
     })
 
 
-    # ----------------------------------------------
+    
     # Update chat title using first question
-    # ----------------------------------------------
 
     message_count = messages_collection.count_documents({
 
@@ -1159,9 +1131,8 @@ FINAL ANSWER
         )
 
 
-    # ----------------------------------------------
+    
     # Save AI message
-    # ----------------------------------------------
 
     messages_collection.insert_one({
 
@@ -1178,9 +1149,8 @@ FINAL ANSWER
     })
 
 
-    # ----------------------------------------------
+    
     # Update conversation
-    # ----------------------------------------------
 
     conversations_collection.update_one(
 
@@ -1199,9 +1169,8 @@ FINAL ANSWER
     )
 
 
-    # ----------------------------------------------
+    
     # Return answer
-    # ----------------------------------------------
 
     return jsonify({
 
@@ -1214,9 +1183,8 @@ FINAL ANSWER
     }), 200
 
 
-# ==================================================
+
 # 14. Run Flask server
-# ==================================================
 
 if __name__ == "__main__":
 
